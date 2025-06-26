@@ -1,0 +1,137 @@
+<!DOCTYPE html><html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>توثيق حسابك - Wanziko</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">  <!-- ✅ OG Tags لمعاينة الرابط عند المشاركة -->  <meta property="og:title" content="توثيق حسابك - Wanziko">
+  <meta property="og:description" content="قدّم طلبك الآن واحصل على شارة التوثيق لحسابك الشخصي أو البيزنس!">
+  <meta property="og:image" content="https://i.postimg.cc/1tGVvYHq/20250617-181409.png">
+  <meta property="og:url" content="https://wanziko-website.netlify.app/verify.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">  <style>
+    .verify-section {
+      max-width: 600px;
+      margin: 40px auto;
+      background-color: #1a1a1a;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 255, 136, 0.3);
+    }
+    .verify-section h2 {
+      color: #00ff88;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    .verify-section .description {
+      color: #ccc;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .verify-section label {
+      display: block;
+      margin-bottom: 8px;
+      color: #00ff88;
+      font-weight: bold;
+    }
+    .verify-section input, .verify-section textarea, .verify-section select {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border: none;
+      border-radius: 8px;
+      background-color: #121212;
+      color: #fff;
+    }
+    .verify-section input:focus, .verify-section textarea:focus, .verify-section select:focus {
+      outline: none;
+      box-shadow: 0 0 10px #00ff88;
+    }
+    .success-message {
+      display: none;
+      margin-top: 20px;
+      padding: 15px;
+      background: #00ff88;
+      color: #000;
+      border-radius: 8px;
+      font-weight: bold;
+      text-align: center;
+    }
+  </style></head>
+<body class="dark-mode">  <!-- ✅ النافبار -->  <nav>
+    <div class="logo">Wanziko</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">الرئيسية</a>
+      <a href="features.html">المميزات</a>
+      <a href="download.html">تحميل</a>
+      <a href="contact.html">تواصل</a>
+      <a href="verify.html">توثيق</a>
+      <a href="privacy.html">الخصوصية</a>
+      <a href="terms.html">الشروط</a>
+    </div>
+  </nav>  <!-- ✅ الهيدر -->  <header class="hero">
+    <h1>✅ قدم لتوثيق حسابك</h1>
+    <p>خلي حسابك مميز وآمن بشارة التوثيق الخضراء.</p>
+  </header>  <!-- ✅ خطوات التقديم -->  <section class="features">
+    <h2>⚡ خطوات التقديم</h2>
+    <div class="grid">
+      <div class="card">🔹 لازم يكون عندك ملف شخصي واضح</div>
+      <div class="card">🔹 تكتب سبب طلب التوثيق</div>
+      <div class="card">🔹 يتم مراجعة طلب التوثيق يدويًا خلال 24 إلى 48 ساعة عمل. سيتم التواصل معك عبر البريد الإلكتروني بعد مراجعة الطلب</div>
+    </div>
+  </section>  <!-- ✅ نموذج التقديم -->  <section class="verify-section">
+    <h2>🔒 قدم طلب توثيق حسابك</h2>
+    <p class="description">املأ البيانات التالية وسيتم مراجعة طلبك يدويًا خلال 24 ساعة.</p><form id="verifyForm">
+  <label for="name">👤 الاسم الكامل:</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="phone">📱 رقم الهاتف (مع كود الدولة):</label>
+  <input type="tel" id="phone" name="phone" required>
+
+  <label for="email">📧 البريد الإلكتروني:</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="type">💼 نوع الحساب:</label>
+  <select id="type" name="type" required>
+    <option value="">-- اختر --</option>
+    <option value="شخصي">شخصي</option>
+    <option value="بيزنس">بيزنس</option>
+    <option value="فنان / مؤثر">فنان / مؤثر</option>
+  </select>
+
+  <label for="message">✍️ قدم تعريفًا قصيرًا عنك:</label>
+  <textarea id="message" name="message" rows="5" required></textarea>
+
+  <button type="submit" class="btn">🚀 إرسال الطلب</button>
+</form>
+
+<div class="success-message" id="successMessage">
+  ✅ تم إرسال طلب التوثيق بنجاح!
+</div>
+
+  </section>  <!-- ✅ الفوتر -->  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">Wanziko</div>
+      <div class="footer-links">
+        <a href="index.html">الرئيسية</a>
+        <a href="features.html">المميزات</a>
+        <a href="verify.html">توثيق</a>
+        <a href="terms.html">الشروط</a>
+        <a href="privacy.html">الخصوصية</a>
+        <a href="contact.html">تواصل</a>
+      </div>
+      <div class="footer-copy">© 2025 Wanziko. جميع الحقوق محفوظة.</div>
+    </div>
+  </footer>  <!-- ✅ جافاسكريبت -->  <script>
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('show');
+    }
+
+    document.getElementById('verifyForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      document.getElementById('verifyForm').reset();
+      document.getElementById('successMessage').style.display = 'block';
+    });
+  </script></body>
+</html>

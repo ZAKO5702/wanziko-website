@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wanziko | الرئيسية</title>
+
+  <!-- ✅ Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- ✅ CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- ✅ صورة تظهر عند مشاركة الرابط -->
+  <meta property="og:title" content="Wanziko | تواصل بأمان وذكاء">
+  <meta property="og:description" content="تطبيق تواصل اجتماعي شامل بأمان، خصوصية، ومميزات ذكية. جرب Wanziko الآن!">
+  <meta property="og:image" content="https://i.postimg.cc/1tGVvYHq/20250617-181409.png">
+  <meta property="og:url" content="https://wanziko-website.netlify.app">
+  <meta property="og:type" content="website">
+
+  <!-- ✅ Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Wanziko | تواصل بأمان وذكاء">
+  <meta name="twitter:description" content="تطبيق Wanziko يجمع بين الأمان، الخصوصية، والتقنيات الذكية.">
+  <meta name="twitter:image" content="https://i.postimg.cc/1tGVvYHq/20250617-181409.png">
+</head>
+
+<body class="dark-mode">
+
+  <!-- ✅ النافبار -->
+  <nav>
+    <div class="logo">Wanziko</div>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">الرئيسية</a>
+      <a href="features.html">المميزات</a>
+      <a href="download.html">تحميل</a>
+      <a href="contact.html">تواصل</a>
+      <a href="verify.html">توثيق</a>
+      <a href="privacy.html">الخصوصية</a>
+      <a href="terms.html">الشروط</a>
+    </div>
+  </nav>
+
+  <!-- ✅ الهيدر -->
+  <header class="hero fade-in">
+    <h1>مرحبًا بك في <span class="highlight">Wanziko</span></h1>
+    <p>تطبيق تواصل اجتماعي شامل، بأمان وذكاء لم تشاهده من قبل.</p>
+    <a href="download.html" class="btn">📥 تحميل التطبيق</a>
+  </header>
+
+  <!-- ✅ المميزات -->
+  <section class="features fade-in">
+    <h2>🚀 لماذا Wanziko؟</h2>
+    <div class="grid">
+      <div class="card">🔒 خصوصية غير مسبوقة</div>
+      <div class="card">🚨 زر طوارئ للبنات</div>
+      <div class="card">💬 شات بدون نت + ترجمة</div>
+      <div class="card">🎧 غرف صوتية مباشرة</div>
+      <div class="card">⏱️ رسائل مؤقتة</div>
+      <div class="card">📢 قنوات ذكية وتفاعلية</div>
+    </div>
+  </section>
+
+  <!-- ✅ الفوتر -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">Wanziko</div>
+      <div class="footer-links">
+        <a href="index.html">الرئيسية</a>
+        <a href="features.html">المميزات</a>
+        <a href="verify.html">توثيق</a>
+        <a href="terms.html">الشروط</a>
+        <a href="privacy.html">الخصوصية</a>
+        <a href="contact.html">تواصل</a>
+      </div>
+      <div class="footer-copy">© 2025 Wanziko. جميع الحقوق محفوظة.</div>
+    </div>
+  </footer>
+
+  <!-- ✅ JavaScript -->
+  <script>
+    function toggleMenu() {
+      document.getElementById('navLinks').classList.toggle('show');
+    }
+
+    // منع فتح أدوات المطور
+    document.onkeydown = function(e) {
+      if (
+        e.keyCode == 123 || 
+        (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) || 
+        (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0))
+      ) {
+        return false;
+      }
+    }
+  </script>
+
+  <!-- ✅ Scroll Reveal -->
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal().reveal('.fade-in', {
+      distance: '50px',
+      duration: 800,
+      easing: 'ease-in-out',
+      origin: 'bottom',
+      interval: 200
+    });
+  </script>
+
+  <!-- ✅ كود حماية إضافي -->
+  <script src="protect.js"></script>
+</body>
+</html>
